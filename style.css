@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-azul1: #00081E;
+    --cor-azul2: #0c1532;
+    --cor-azul3: #324071c4;
+    --cor-branca1: #ffffff9d;
+    --cor-branca2:#FDFDFD;
+}
+
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estilo do traço na barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #1b274d; /* Cor da barra de rolagem */
+    border-radius: 8px; /* Borda arredondada */
+  }
+  
+  /* Estilo da área da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Cor da área da barra de rolagem */
+  }
+  
+  /* Estilo do canto da barra de rolagem */
+  ::-webkit-scrollbar-corner {
+    background-color: transparent; /* Cor do canto da barra de rolagem */
+  }
+  
+
+  body {
+    background-color: var(--cor-azul1);
+    
+}
+
+
+header{
+    background-color: var(--cor-azul2);
+    font-family: 'Hind';
+    
+}
+
+/* Seus estilos existentes */
+
+/* Seus estilos existentes */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    border-bottom: 2px solid #070e243c; /* Cor e espessura ajustadas */
+    box-shadow: 0px 1px 5px rgba(9, 6, 37, 0.283); /* Adiciona uma sombra sutil */
+}
+
+.transparent-blur {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid transparent; /* Torna a borda transparente */
+}
+
+.solid {
+    background-color: var(--cor-azul2);
+    backdrop-filter: blur(20px);
+    border-bottom: 2px solid #070e24;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 79px;
+    line-height: 21px;
+    font-size: 15px;
+    font-family: 'Hind';
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    margin-right: 30%;
+    
+    
+}
+
+nav li {
+    padding: 10px;
+    padding-right: 55px;
+    color: var(--cor-branca1);
+   
+    
+}
+
+nav li {
+    position: relative;
+    border-bottom: 2px solid transparent; /* Começa como transparente */
+    transition: border-bottom 0.3s ease; /* Adiciona transição para suavizar a mudança */
+}
+
+nav li:hover {
+    border-bottom: 2px solid #ffffff; /* Cor e espessura da linha ao passar o mouse */
+}
+
+#logotipo{
+    width: 130px;
+}
+
+#login {
+    width: 23px;
+    margin-right: 5px;
+    
+}
+
+#register {
+    width: 23px;
+    margin-right: 5px;
+    
+}
+
+
+
+.divlogin {
+    display: flex;
+    align-items: center;
+    color: var(--cor-branca2);
+    margin-left: 115px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Hind';
+    line-height: 21px;
+    
+    
+}
+
+.divlogin a{
+    text-decoration: none;
+}
+
+.divregister {
+    display: flex;
+    align-items: center;
+    color: var(--cor-branca2);
+    margin-right: 62px;
+    font-size: 15px;
+    font-family: 'Hind';
+    line-height: 21px;
+    
+}
+.divregister a{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.welcome {
+    padding: 70px;
+    color: var(--cor-branca2);
+    background-color: var(--cor-azul2);
+    margin-top: 7%;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 9%;
+}
+
+.welcome h1{
+    font-family: 'Kumbh Sans';
+}
+
+.welcome p{
+    font-family: 'Hind';
+    padding-top:20px;
+}
+
+.inscreva-se-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px; /* Ajuste o padding para tornar o botão mais fino */
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 18px;
+    font-family: 'Kumbh Sans';
+}
+
+.inscreva-se-btn svg {
+    margin-right: 5px; /* Reduz o espaçamento entre o ícone e o texto */
+    height: 20px; /* Ajusta a altura do ícone conforme necessário */
+    width: 20px; /* Ajusta a largura do ícone conforme necessário */
+}
+
+.inscreva-se-btn:hover {
+    background-color: #2980b9;
+}
+
+
+.statuswl {
+    padding: 70px;
+    color: var(--cor-branca1);
+    background-color: var(--cor-azul3);
+    margin-top: 7%;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 64px;
+    font-family: 'Hind';
+    margin-bottom: 10%;
+}
+
+.statuswl p{
+    font-size: 17px;
+    
+}
+
+#p2{
+    padding-top: 10px;
+}
+
+#p3{
+    padding-top: 10px;
+}
+
+#negrito{
+    color: var(--cor-branca2);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #141a23;
+    padding-left: 54px;
+    padding-right: 58px;
+    background-color: var(--cor-azul2);
+}
+
+
+
+
+.linkarctic a {
+    text-decoration: none;
+    color: var(--cor-branca2);
+    font-size: 13px;
+    font-family: 'Hind';
+    font-weight: 500;
+}
+
+.ul-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.ul-footer a{
+    text-decoration: none;
+    color: var(--cor-branca2);
+}
+
+.ul-footer ul li {
+    margin-left: 10px;
+    color: var(--cor-branca2);
+    font-family: 'Hind';
+    font-weight: 500;
+    font-size: 13px;
+    /* Adicione algum estilo adicional conforme necessário */
+}
+
+.small-text {
+    font-size: 11px; /* Ajuste o tamanho conforme necessário */
+    color: #D1D5DB; /* Ajuste a cor conforme necessário */
+    margin-top: 5px; /* Adiciona algum espaçamento acima do texto */
+    font-family: 'Hind';
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.copyright-symbol {
+    font-size: 8px;
+    vertical-align: top;
+    /* Adicione outros estilos conforme necessário */
+}
+
+
+/* Adicione regras de mídia queries para ajustar o layout em telas menores */
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        text-align: center; /* Centraliza o texto */
+    }
+}
