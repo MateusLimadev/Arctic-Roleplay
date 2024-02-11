@@ -9,13 +9,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    var mobileMenuButton = document.querySelector(".mobile-menu-icon button");
-    var body = document.body;
-
-    mobileMenuButton.addEventListener("click", function () {
-        body.classList.toggle("menu-opened");
-    });
-});

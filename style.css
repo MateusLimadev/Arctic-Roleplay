@@ -51,9 +51,6 @@ header{
     
 }
 
-/* Seus estilos existentes */
-
-/* Seus estilos existentes */
 
 #navbar {
     position: fixed;
@@ -65,9 +62,6 @@ header{
     box-shadow: 0px 1px 5px rgba(9, 6, 37, 0.283); /* Adiciona uma sombra sutil */
 }
 
-#navbar-mobile{
-    display: none;
-}
 
 .transparent-blur {
     background-color: transparent;
@@ -311,11 +305,3 @@ footer {
     /* Adicione outros estilos conforme necessário */
 }
 
-
-/* Adicione regras de mídia queries para ajustar o layout em telas menores */
-@media screen and (max-width: 600px) {
-    footer {
-        flex-direction: column; /* Empilha os itens verticalmente */
-        text-align: center; /* Centraliza o texto */
-    }
-}
