@@ -9,3 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var menuIcon = document.querySelector('.hamburguer-icon');
+    var mobileNav = document.querySelector('#navbar-mobile');
+
+    menuIcon.onclick = function () {
+        mobileNav.classList.toggle('menu-open');
+    };
+});

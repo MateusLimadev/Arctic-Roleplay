@@ -1,0 +1,100 @@
+/* estilos_responsivos.css */
+
+/* Adicione regras de mídia queries para ajustar o layout em telas menores */
+@media screen and (max-width: 600px) {
+    /* Adicione aqui as regras específicas para telas menores */
+    body {
+        font-size: 14px; /* Exemplo de ajuste de fonte para telas menores */
+    }
+
+    /* Adicione outras regras conforme necessário */
+    
+    footer {
+        flex-direction: column; /* Exemplo de ajuste de layout para telas menores */
+        text-align: center; /* Exemplo de ajuste de layout para telas menores */
+    }
+
+    
+
+
+    .nav-desktop {
+        display: flex; /* Exibe a lista de navegação para desktop em telas menores */
+    }
+
+    .hamburguer-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: var(--cor-branca1);
+    }
+
+    .nav-mobile {
+        display: none; /* Oculta a lista de navegação móvel por padrão */
+        background-color: var(--cor-azul2);
+        position: absolute;
+        top: 79px; /* Ajuste conforme necessário para a altura do seu header */
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    }
+
+    .menu-open .nav-mobile {
+        display: block; /* Exibe a lista de navegação móvel quando a classe .menu-open é aplicada */
+    }
+
+    .nav-mobile ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-mobile li {
+        padding: 15px;
+        text-align: center;
+    }
+
+    
+    .inscreva-se-btn {
+        padding: 10px; /* Ajusta o padding para telas menores */
+        width: 100%; /* Faz com que o botão ocupe 100% da largura disponível */
+        box-sizing: border-box; /* Garante que padding não aumente a largura total */
+        justify-content: center;
+    }
+
+    #logotipo{
+        max-width: 100px;
+    }
+
+    .ul-desktop{
+        display: none;
+        
+    }
+    
+
+    .welcome{
+        margin-top: 30%;
+    }
+
+    .statuswl {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os elementos verticalmente */
+    }
+    
+    .statuswl p {
+        line-height: 1.6;
+        margin-bottom: 30px;
+        
+    }
+
+
+    
+
+    #p3{
+        display: none;
+    }
+
+  }

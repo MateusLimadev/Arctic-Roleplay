@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <title>Arctic Roleplay Community</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav id="navbar" class="transparent-blur">
             <img id="logotipo" src="imagens/logotipo.png" alt="logo">
-            <ul>
+            <ul class="ul-desktop">
                 <li>Home</li>
                 <li>Loja</li>
                 <li>Whitelist</li>
             </ul>
 
-            <!--<a href="#">
+            <div class="hamburguer-icon" onclick="toggleMenu()">☰</div>
+            <nav id="navbar-mobile" class="transparent-blur nav-mobile">
+            <ul class="ul-mobile">
+            <li>Home</li>
+            <li>Loja</li>
+            <li>Whitelist</li>
+            </ul>
+            </nav>
+
+            
+
+            <!--
+                BOTOES DE LOGIN E REGISTRO PARA DEPOIS QUE CRIAR O BANCO DE DADOS
+                <a href="#">
                 <div class="divlogin">
                     <img id="login" src="imagens/assets/loginicon.png" alt="login">
                 
@@ -31,8 +45,9 @@
                     <img id="register" src="imagens/assets/registericon.png" alt="register">
                     <p>Registrar</p>
                 </div>
-            </a>
-        </nav>-->
+            </a> -->
+
+        </nav>
 
     </header>
 
@@ -50,7 +65,7 @@
 
     <div class="statuswl">
         <p id="p1">Bem-vindo, visitante, ao site oficial do Arctic Roleplay.</p>
-        <p id="p2">A listagem de permissão padrão atualmente é: <strong id="negrito">Fechado!</strong><br>
+        <p id="p2">A listagem de permissão padrão atualmente é: <strong id="negrito">Fechado!</strong><br><br>
 
             A lista de Apoiadores da Comunidade Permitidos é atualmente: <strong id="negrito">Aberto!</strong>!<br></p>
             
