@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    var menuIcon = document.querySelector('.hamburguer-icon');
-    var mobileNav = document.querySelector('#navbar-mobile');
+document.addEventListener("DOMContentLoaded", function () {
+    var mobileMenuButton = document.querySelector(".mobile-menu-icon button");
+    var body = document.body;
 
-    menuIcon.onclick = function () {
-        mobileNav.classList.toggle('menu-open');
-    };
+    mobileMenuButton.addEventListener("click", function () {
+        body.classList.toggle("menu-opened");
+    });
 });

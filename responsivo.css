@@ -15,43 +15,26 @@
     }
 
     
+    
 
-
-    .nav-desktop {
-        display: flex; /* Exibe a lista de navegação para desktop em telas menores */
-    }
-
-    .hamburguer-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-        color: var(--cor-branca1);
-    }
-
-    .nav-mobile {
-        display: none; /* Oculta a lista de navegação móvel por padrão */
-        background-color: var(--cor-azul2);
-        position: absolute;
-        top: 79px; /* Ajuste conforme necessário para a altura do seu header */
-        left: 0;
-        width: 100%;
-        z-index: 999;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
-    }
-
-    .menu-open .nav-mobile {
-        display: block; /* Exibe a lista de navegação móvel quando a classe .menu-open é aplicada */
-    }
-
-    .nav-mobile ul {
+    .mobile-menu ul{
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-top: 10%;
+        
     }
 
-    .nav-mobile li {
-        padding: 15px;
-        text-align: center;
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
     }
+
+    .open{
+        display: block;
+    }
+
 
     
     .inscreva-se-btn {
