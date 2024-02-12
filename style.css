@@ -62,6 +62,10 @@ header{
     box-shadow: 0px 1px 5px rgba(9, 6, 37, 0.283); /* Adiciona uma sombra sutil */
 }
 
+#navbar-mobile{
+    display: none;
+}
+
 
 .transparent-blur {
     background-color: transparent;
