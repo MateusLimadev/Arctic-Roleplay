@@ -267,13 +267,19 @@ footer {
     font-size: 13px;
     font-family: 'Hind';
     font-weight: 500;
+    text-align: center;
+    
 }
+
 
 .ul-footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    
+    
+    
 }
 
 .ul-footer a{
