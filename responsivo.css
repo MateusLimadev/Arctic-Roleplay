@@ -20,15 +20,18 @@
         padding-bottom: 10px;
         padding-top: 10px;
         margin: auto;
+        text-align: center;
     }
 
     .ul-footer{
         display: block;
         margin: auto;
+        text-align: center;
     }
 
     .small-text{
         margin: auto;
+        text-align: center;
     }
 
     
