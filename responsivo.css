@@ -1,3 +1,4 @@
+
 /* estilos_responsivos.css */
 
 /* Adicione regras de mídia queries para ajustar o layout em telas menores */
@@ -16,34 +17,26 @@
         margin: 0;
     }
 
+    #navbar{
+        display: none;
+    }
     
+    #navbar-mobile{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    border-bottom: 2px solid #070e243c; /* Cor e espessura ajustadas */
+    box-shadow: 0px 1px 5px rgba(9, 6, 37, 0.283); /* Adiciona uma sombra sutil */
+    }
 
     .linkarctic{
         padding-bottom: 10px;
         padding-top: 10px;
-        margin: auto;
-        text-align: center;
-    }
+        }
 
-    .ul-footer{
-        display: block;
-        margin: auto;
-        text-align: center;
-    }
-
-    .small-text{
-        margin: auto;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    
-    .inscreva-se-btn {
-        padding: 10px; /* Ajusta o padding para telas menores */
-        width: 100%; /* Faz com que o botão ocupe 100% da largura disponível */
-        box-sizing: border-box; /* Garante que padding não aumente a largura total */
-        justify-content: center;
-    }
 
     #logotipo{
         max-width: 100px;

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
@@ -14,7 +15,6 @@
     --cor-azul3: #324071c4;
     --cor-branca1: #ffffff9d;
     --cor-branca2:#FDFDFD;
-
 }
 
 
@@ -120,7 +120,7 @@ nav li:hover {
 }
 
 #logotipo{
-    width: 107px;
+    width: 130px;
 }
 
 
