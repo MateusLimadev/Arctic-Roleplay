@@ -282,13 +282,15 @@ footer {
 }
 
 .ul-footer ul li {
-    margin-left: 10px;
+    margin-left: 20px;
     color: var(--cor-branca2);
     font-family: 'Hind';
     font-weight: 500;
     font-size: 13px;
     /* Adicione algum estilo adicional conforme necessário */
 }
+
+
 
 .small-text {
     font-size: 11px; /* Ajuste o tamanho conforme necessário */
