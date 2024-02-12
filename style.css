@@ -166,7 +166,7 @@
     }
 
     .navigation--mobile {
-        top: var(--navbar-height);
+        top: 0;
         position: absolute;
         right: 0px;
         display: flex;
