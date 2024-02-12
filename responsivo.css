@@ -12,6 +12,23 @@
     footer {
         flex-direction: column; /* Exemplo de ajuste de layout para telas menores */
         text-align: center; /* Exemplo de ajuste de layout para telas menores */
+        padding: 0;
+        margin: 0;
+    }
+
+    .linkarctic{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: auto;
+    }
+
+    .ul-footer{
+        display: block;
+        margin: auto;
+    }
+
+    .small-text{
+        margin: auto;
     }
 
     
