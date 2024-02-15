@@ -3,7 +3,89 @@
 
 /* Adicione regras de mídia queries para ajustar o layout em telas menores */
 @media screen and (max-width: 600px) {
-    /* Adicione aqui as regras específicas para telas menores */
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer{
+        width: 20px;
+        border-top: 2px solid;
+        gap: .5rem;
+        display: block;
+        color: white;
+
+    }
+
+    
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+
+    }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+
+    }
+
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg) ;
+    }
+
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg) ;
+        top: -7px;
+    }
+
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: var(--cor-azul2);
+        height: 0px;
+        z-index: 1000;
+        transition:  .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #nav.active #menu{
+        display: block;
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow: auto;
+    }
+
+    #menu a {
+        padding: 2rem 0;
+        margin: 17px 1rem;
+        text-align: center;
+        font-family: var(--font-secundaria);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.137);
+    }
+
+    #Logotipo{
+        max-width: 60%;
+        
+      }
+   
     body {
         font-size: 14px; /* Exemplo de ajuste de fonte para telas menores */
     }
