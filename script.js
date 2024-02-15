@@ -18,3 +18,16 @@ function toggleMenu(event){
 
 btnmobile.addEventListener('click', toggleMenu);
 btnmobile.addEventListener('touchstart', toggleMenu);
+
+
+window.addEventListener('scroll', function () {
+    var header = document.getElementById('header');
+    var scrollPosition = window.scrollY;
+
+    // Adiciona ou remove a classe 'transparent' com base no scroll
+    if (scrollPosition > 0) {
+        header.classList.add('transparent');
+    } else {
+        header.classList.remove('transparent');
+    }
+});
