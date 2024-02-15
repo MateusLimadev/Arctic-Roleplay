@@ -15,20 +15,25 @@
     --cor-azul3: #324071c4;
     --cor-branca1: #ffffff9d;
     --cor-branca2:#FDFDFD;
+
+    --font-primaria: 'Hind';
+    --font-secundaria: 'Kumbh Sans';
 }
 
 body, ul{
     margin: 0;
     padding: 0;
   }
-  
+
+ 
   a{
-    color: var(--cor-branca1);
+    color: var(--cor-branca2);
     text-decoration: none;
+    font-family: var(--font-secundaria)
   }
   
   a:hover{
-    color: var(--cor-branca2);
+    color: var(--cor-branca1);
   }
   
   
@@ -38,9 +43,8 @@ body, ul{
     align-items: center;
     height: 70px;
     padding: 1rem;
-    justify-content: space-between;
     background-color: var(--cor-azul2);
-    font-family: 'Hind';
+    
     
   }
   
@@ -50,7 +54,11 @@ body, ul{
     gap: .5rem;
     
     
+    
+    
   }
+
+ 
   
   #menu a{
     display: block;
@@ -100,7 +108,7 @@ body, ul{
 
 header{
     background-color: var(--cor-azul2);
-    font-family: 'Hind';
+    
     
 }
 

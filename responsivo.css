@@ -23,7 +23,9 @@
     }
 
     
-    
+    #header{
+        justify-content: space-between;
+    }
 
     #hamburguer::after, #hamburguer::before{
         content: '';

@@ -17,6 +17,9 @@
 
 @media  (max-width: 817px) {
 
+
+   
+
     #btn-mobile{
         display: flex;
         padding: .5rem 1rem;
@@ -92,12 +95,18 @@
         text-align: center;
         font-family: var(--font-secundaria);
         border-bottom: 2px solid rgba(255, 255, 255, 0.137);
+        
     }
 
     #Logotipo{
         max-width: 60%;
         
       }
+
+      #header{
+        justify-content: space-between;
+    }
+
     
     body {
         font-size: 14px; 

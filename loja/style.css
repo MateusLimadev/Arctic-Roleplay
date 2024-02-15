@@ -26,12 +26,14 @@ body, ul{
 }
 
 a{
-  color: var(--cor-branca1);
+  color: var(--cor-branca2);
   text-decoration: none;
+  font-family: var(--font-secundaria)
 }
 
 a:hover{
-  color: var(--cor-branca2);
+  color: var(--cor-branca1);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.041);
 }
 
 
@@ -41,7 +43,6 @@ a:hover{
   align-items: center;
   height: 70px;
   padding: 1rem;
-  justify-content: space-between;
   background-color: var(--cor-azul2);
   font-family: 'Hind';
   
@@ -58,7 +59,12 @@ a:hover{
 #menu a{
   display: block;
   padding: .5rem;
+  
+  
 }
+
+
+
 
 #btn-mobile{
   display: none;
@@ -272,10 +278,6 @@ a{
 }
 
 
-
-
-
-  
   
 footer {
   display: flex;
@@ -288,9 +290,6 @@ footer {
   background-color: var(--cor-azul2);
   margin-top: 10%;
 }
-
-
-
 
 .linkarctic a {
   text-decoration: none;
