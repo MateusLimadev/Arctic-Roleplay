@@ -172,56 +172,6 @@ a{
     padding-bottom: 10px;
 }
 
-
-
-
-
-
- 
- 
-  
-  
-  
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-top: 1px solid #141a23;
-    padding-left: 54px;
-    padding-right: 58px;
-    background-color: var(--cor-azul2);
-}
-
-
-
-
-.linkarctic a {
-    text-decoration: none;
-    color: var(--cor-branca2);
-    font-size: 13px;
-    font-family: 'Hind';
-    font-weight: 500;
-   
-    
-}
-
-
-.small-text {
-    font-size: 11px; /* Ajuste o tamanho conforme necessário */
-    color: #D1D5DB; /* Ajuste a cor conforme necessário */
-    margin-top: 5px; /* Adiciona algum espaçamento acima do texto */
-    font-family: 'Hind';
-    font-weight: 500;
-    margin-left: 20px;
-}
-
-.copyright-symbol {
-    font-size: 8px;
-    vertical-align: top;
-    /* Adicione outros estilos conforme necessário */
-}
-
 .button {
   --width: 100px;
   --height: 35px;
@@ -239,6 +189,7 @@ footer {
   font-family: "Arial";
   transition: background 0.3s;
   margin-left: 55px;
+  margin: auto;
 }
 
 .button::before {
@@ -319,5 +270,79 @@ footer {
 .button:hover .icon {
   top: 0;
 }
+
+
+
+
+
+  
+  
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #141a23;
+  padding-left: 54px;
+  padding-right: 58px;
+  background-color: var(--cor-azul2);
+  margin-top: 10%;
+}
+
+
+
+
+.linkarctic a {
+  text-decoration: none;
+  color: var(--cor-branca2);
+  font-size: 13px;
+  font-family: 'Hind';
+  font-weight: 500;
+ 
+  
+}
+
+
+.ul-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+  
+  
+}
+
+.ul-footer a{
+  text-decoration: none;
+  color: var(--cor-branca2);
+}
+
+.ul-footer ul li {
+  margin-left: 20px;
+  color: var(--cor-branca2);
+  font-family: 'Hind';
+  font-weight: 500;
+  font-size: 13px;
+  /* Adicione algum estilo adicional conforme necessário */
+}
+
+
+
+.small-text {
+  font-size: 11px; /* Ajuste o tamanho conforme necessário */
+  color: #D1D5DB; /* Ajuste a cor conforme necessário */
+  margin-top: 5px; /* Adiciona algum espaçamento acima do texto */
+  font-family: 'Hind';
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.copyright-symbol {
+  font-size: 8px;
+  vertical-align: top;
+  /* Adicione outros estilos conforme necessário */
+}
+
 
 

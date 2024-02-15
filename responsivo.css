@@ -97,6 +97,7 @@
         text-align: center; /* Exemplo de ajuste de layout para telas menores */
         padding: 0;
         margin: 0;
+       
     }
 
    
@@ -106,11 +107,7 @@
         }
 
 
-    #logotipo{
-        max-width: 100px;
-        display: block;
-    }
-
+    
 
 
     .ul-desktop{

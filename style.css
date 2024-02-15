@@ -105,19 +105,6 @@ header{
 }
 
 
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-    border-bottom: 2px solid #070e243c; /* Cor e espessura ajustadas */
-    box-shadow: 0px 1px 5px rgba(9, 6, 37, 0.283); /* Adiciona uma sombra sutil */
-}
-
-#navbar-mobile{
-    display: none;
-}
 
 
 .transparent-blur {
@@ -134,9 +121,11 @@ header{
 
 
 
-#logotipo{
-    width: 130px;
-}
+#Logotipo{
+    max-width: 70%;
+    padding-top: 12px;
+    padding-left: 0;
+  }
 
 
 #login {
@@ -280,6 +269,7 @@ footer {
     padding-left: 54px;
     padding-right: 58px;
     background-color: var(--cor-azul2);
+    margin-top: 10%;
 }
 
 
