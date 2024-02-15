@@ -2,7 +2,84 @@
 /* estilos_responsivos.css */
 
 
-@media screen and (max-width: 600px) {
+@media  (max-width: 600px) {
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer{
+        width: 20px;
+        border-top: 2px solid;
+        gap: .5rem;
+        display: block;
+
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+
+    }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+
+    }
+
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg) ;
+    }
+
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg) ;
+        top: -7px;
+    }
+
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: rgb(17, 17, 26);
+        height: 0px;
+        z-index: 1000;
+        transition:  .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #nav.active #menu{
+        display: block;
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow: auto;
+    }
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid black;
+    }
+
+    #Logotipo{
+        max-width: 60%;
+        
+      }
     
     body {
         font-size: 14px; 
@@ -39,12 +116,7 @@
         }
 
 
-    #logotipo{
-        max-width: 100px;
-        display: block;
-    }
-
-
+        
 
     .ul-desktop{
         display: none;

@@ -9,16 +9,55 @@
     box-sizing: border-box;
 }
 
-:root {
-    --cor-azul1: #00081E;
-    --cor-azul2: #0c1532;
-    --cor-azul3: #324071c4;
-    --cor-branca1: #ffffff9d;
-    --cor-branca2:#FDFDFD;
-
-    --font-principal: 'Hind';
-    --font-secundaria: 'Kumbh Sans';
+body, ul{
+  margin: 0;
+  padding: 0;
 }
+
+:root {
+  --cor-azul1: #00081E;
+  --cor-azul2: #0c1532;
+  --cor-azul3: #324071c4;
+  --cor-branca1: #ffffff9d;
+  --cor-branca2:#FDFDFD;
+
+  --font-principal: 'Hind';
+  --font-secundaria: 'Kumbh Sans';
+}
+
+
+#header{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 1rem;
+  justify-content: space-between;
+  background-color: var(--cor-azul2);
+  font-family: 'Hind';
+}
+
+#menu{
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+}
+
+#menu a{
+  display: block;
+  padding: .5rem;
+}
+
+#btn-mobile{
+  display: none;
+}
+
+#Logotipo{
+  max-width: 70%;
+  padding-top: 12px;
+  padding-left: 0;
+}
+
 
 
 /* Estilo da barra de rolagem */
@@ -49,30 +88,6 @@
 }
 
 
-header{
-    background-color: var(--cor-azul2);
-    font-family: 'Hind';
-    
-}
-
-
-
-
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-    border-bottom: 2px solid #070e243c; /* Cor e espessura ajustadas */
-    box-shadow: 0px 1px 5px rgba(9, 6, 37, 0.283); /* Adiciona uma sombra sutil */
-}
-
-#navbar-mobile{
-    display: none;
-}
-
-
 .transparent-blur {
     background-color: transparent;
     backdrop-filter: blur(5px);
@@ -85,48 +100,6 @@ header{
     border-bottom: 2px solid #070e24;
 }
 
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: 79px;
-    line-height: 21px;
-    font-size: 15px;
-    font-family: 'Hind';
-    font-weight: 500;
-}
-
-nav ul {
-    display: flex;
-    margin: 0;
-    list-style: none;
-    margin-right: 61%;
-}
-
-nav li {
-    padding: 10px;
-    padding-right: 55px;
-    color: var(--cor-branca1);
-   
-    
-}
-
-nav li {
-    position: relative;
-    border-bottom: 2px solid transparent; /* Começa como transparente */
-    transition: border-bottom 0.3s ease; /* Adiciona transição para suavizar a mudança */
-}
-
-nav li:hover {
-    border-bottom: 2px solid #ffffff; /* Cor e espessura da linha ao passar o mouse */
-}
-
-#logotipo{
-    width: 130px;
-}
 
 
 a{
@@ -316,32 +289,6 @@ footer {
    
     
 }
-
-
-.ul-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    
-    
-    
-}
-
-.ul-footer a{
-    text-decoration: none;
-    color: var(--cor-branca2);
-}
-
-.ul-footer ul li {
-    margin-left: 20px;
-    color: var(--cor-branca2);
-    font-family: 'Hind';
-    font-weight: 500;
-    font-size: 13px;
-    /* Adicione algum estilo adicional conforme necessário */
-}
-
 
 
 .small-text {
