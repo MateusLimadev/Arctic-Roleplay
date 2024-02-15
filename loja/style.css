@@ -26,12 +26,12 @@ body, ul{
 }
 
 a{
-  color: var(--cor-branca2);
+  color: var(--cor-branca1);
   text-decoration: none;
 }
 
 a:hover{
-  color: var(--cor-branca1);
+  color: var(--cor-branca2);
 }
 
 
@@ -44,12 +44,14 @@ a:hover{
   justify-content: space-between;
   background-color: var(--cor-azul2);
   font-family: 'Hind';
+  
 }
 
 #menu{
   display: flex;
   list-style: none;
   gap: .5rem;
+  margin-right: 70vw;
   
 }
 
@@ -122,7 +124,7 @@ a{
     display: flex;
     flex-wrap: wrap; /* Permite que os pacotes quebrem para a próxima linha quando não houver espaço suficiente */
     justify-content: space-around; /* Distribui os pacotes igualmente ao longo do eixo principal (horizontal) */
-    margin-top: 10%;
+   
 }
 
 .pacote {
