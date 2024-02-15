@@ -9,11 +9,6 @@
     box-sizing: border-box;
 }
 
-body, ul{
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --cor-azul1: #00081E;
   --cor-azul2: #0c1532;
@@ -24,6 +19,22 @@ body, ul{
   --font-principal: 'Hind';
   --font-secundaria: 'Kumbh Sans';
 }
+
+body, ul{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: var(--cor-branca2);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--cor-branca1);
+}
+
+
 
 
 #header{
