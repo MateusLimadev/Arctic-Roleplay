@@ -35,8 +35,6 @@ a:hover{
 }
 
 
-
-
 #header{
   box-sizing: border-box;
   display: flex;
@@ -52,6 +50,7 @@ a:hover{
   display: flex;
   list-style: none;
   gap: .5rem;
+  
 }
 
 #menu a{
