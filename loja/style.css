@@ -132,6 +132,7 @@ a{
     display: flex;
     flex-wrap: wrap; /* Permite que os pacotes quebrem para a próxima linha quando não houver espaço suficiente */
     justify-content: space-around; /* Distribui os pacotes igualmente ao longo do eixo principal (horizontal) */
+    margin-top: 7%;
    
 }
 
