@@ -1,7 +1,7 @@
 
 /* estilos_responsivos.css */
 
-/* Adicione regras de mídia queries para ajustar o layout em telas menores */
+
 @media screen and (max-width: 600px) {
 
     #btn-mobile{
@@ -22,6 +22,7 @@
 
     }
 
+    
     
 
     #hamburguer::after, #hamburguer::before{
@@ -65,7 +66,6 @@
         overflow-y: hidden;
         
     }
-
     #nav.active #menu{
         display: block;
         visibility: visible;
@@ -99,22 +99,7 @@
         margin: 0;
     }
 
-    #navbar{
-        display: none;
-    }
-    
-    #navbar-mobile{
-    display: block;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-    border-bottom: 2px solid #070e243c; /* Cor e espessura ajustadas */
-    box-shadow: 0px 1px 5px rgba(9, 6, 37, 0.283); /* Adiciona uma sombra sutil */
-    
-    }
-
+   
     .linkarctic{
         padding-bottom: 10px;
         padding-top: 10px;
