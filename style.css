@@ -156,6 +156,17 @@ body, ul{
       
 }
 
+#home-icon{
+  width: 20px;
+  padding-right: 3px;
+}
+
+
+
+#loja-icon{
+  width: 20px;
+  padding-right: 3px;
+}
 
   .divlogin {
     display: flex;
