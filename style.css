@@ -93,6 +93,7 @@ body, ul{
   }
   
   
+
   #header {
     box-sizing: border-box;
     display: flex;
@@ -143,6 +144,10 @@ body, ul{
     max-width: 118px;
     padding-top: 3px;
     
+}
+
+#logo-mobile{
+  display: none;
 }
 
 

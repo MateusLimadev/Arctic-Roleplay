@@ -8,11 +8,23 @@
         display: none;
     }
 
-    .divlogin{
-    display: none;
+    #Logotipo{
+        display: none;
+    }
+
+    #logo-mobile {
+    display: block;
+    max-width: 23%;
+    padding-top: 3px;
+    
 }
 
 
+    .divlogin{
+    margin-right: 0;
+}
+
+  
     #btn-mobile{
         display: flex;
         padding: .5rem 1rem;
@@ -28,12 +40,14 @@
         gap: .5rem;
         display: block;
         color: white;
+        
 
     }
 
     
     #header{
         justify-content: space-between;
+        display: flex;
     }
 
     #hamburguer::after, #hamburguer::before{
@@ -92,11 +106,6 @@
         border-bottom: 2px solid rgba(255, 255, 255, 0.137);
     }
 
-    #Logotipo{
-        max-width: 60%;
-        
-      }
-   
     body {
         font-size: 14px; /* Exemplo de ajuste de fonte para telas menores */
     }
