@@ -15,10 +15,34 @@
     --font-secundaria: 'Kumbh Sans';
   }
 
-@media  (max-width: 817px) {
+@media  (max-width: 600px) {
+
+
+    #Logotipo{
+        display: none;
+    }
+
+     #logotipo-link{
+        display: none;
+    }
 
 
    
+    #login{
+        width: 19px;
+    }
+
+    #logo-mobile {
+    display: block;
+    max-width: 23%;
+    padding-top: 3px;
+    
+}
+
+
+    .divlogin{
+    margin-right: 0;
+}
 
     #btn-mobile{
         display: flex;

@@ -12,6 +12,15 @@
         display: none;
     }
 
+    #logotipo-link{
+        display: none;
+    }
+
+
+    #login{
+        width: 19px;
+    }
+
     #logo-mobile {
     display: block;
     max-width: 23%;
