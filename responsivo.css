@@ -8,6 +8,11 @@
         display: none;
     }
 
+    .divlogin{
+    display: none;
+}
+
+
     #btn-mobile{
         display: flex;
         padding: .5rem 1rem;

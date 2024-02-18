@@ -179,21 +179,6 @@ header{
     
 }
 
-.users{
-    gap: 30px;
-    display: flex;
-    margin-left: 42rem;
-}
-
- 
-  .divregister{
-    display: flex;
-    align-items: center;
-    color: var(--cor-branca2);
-    font-family: var(--font-secundaria);
-    font-weight: 500;
-    
-  }
 
   .divlogin{
     display: flex;
@@ -201,6 +186,7 @@ header{
     color: var(--cor-branca2);
     font-family: var(--font-secundaria);
     font-weight: 500;
+     margin-left: 49rem;
   }
 
 
