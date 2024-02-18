@@ -2,6 +2,10 @@
 
 const btnmobile = document.getElementById('btn-mobile');
 
+// Adiciona a classe 'transparent' inicialmente
+var header = document.getElementById('header');
+header.classList.add('transparent');
+
 function toggleMenu(event) {
     if (event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById('nav');
@@ -20,7 +24,6 @@ btnmobile.addEventListener('click', toggleMenu);
 btnmobile.addEventListener('touchstart', toggleMenu);
 
 window.addEventListener('scroll', function () {
-    var header = document.getElementById('header');
     var scrollPosition = window.scrollY;
 
     // Adiciona ou remove a classe 'transparent' com base no scroll

@@ -36,38 +36,47 @@ a:hover{
 }
 
 
-#header {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  height: 70px;
-  padding: 1rem;
-  background-color: var(--cor-azul2);
-  position: fixed;
-  top: 0;
-  width: 100%; 
-  z-index: 1000; 
-  transition: background-color 0.3s ease; 
+  #header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    background-color:var(--cor-azul2) ;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000; 
+    transition: background-color 0.3s ease; 
+    background-color: var(--cor-azul2);
+    justify-content: space-between;
+    
+   
 }
 
 #header.transparent {
-  background-color: #0c153263; 
+  background-color: #0c153200; 
 }
 
-#menu{
-  display: flex;
-  list-style: none;
-  gap: 4.5rem;
-  
-  
+  #menu{
+    display: flex;
+    list-style: none;
+    gap: 4.5rem;
+    align-items: center;
+    
+    
+   
 }
 
-#menu a{
-  display: block;
-  padding: .5rem;
+ 
   
-  
-}
+  #menu a{
+    display: block;
+    padding: .5rem;
+    justify-content: center;
+   
+  }
+
 
 
 
@@ -352,3 +361,26 @@ footer {
 
 
 
+#login{
+     width: 23px;
+      
+}
+
+
+  .divlogin {
+    display: flex;
+    align-items: center;
+    color: var(--cor-branca2);
+    font-family: var(--font-secundaria);
+    font-weight: 500;
+    gap: 4px;
+    margin-right: 50px;
+    
+}
+
+
+ #Logotipo {
+    max-width: 118px;
+    padding-top: 3px;
+    
+}
