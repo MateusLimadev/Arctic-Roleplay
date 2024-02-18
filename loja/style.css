@@ -91,6 +91,9 @@ a:hover{
   padding-left: 0;
 }
 
+#logo-mobile{
+  display: none;
+}
 
 
 /* Estilo da barra de rolagem */
