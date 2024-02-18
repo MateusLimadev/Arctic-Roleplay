@@ -44,7 +44,7 @@ body, ul{
     display: flex;
     transition: 0.7s ease-in-out;
     transform: translateX(0);
-    color: #ffffff;
+    
 
   }
 
@@ -54,12 +54,7 @@ body, ul{
     
   }
 
-  .container h1{
-    font-size: 50px;
-  }
 
- 
- 
   a{
     color: var(--cor-branca2);
     text-decoration: none;
