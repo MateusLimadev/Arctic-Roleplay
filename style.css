@@ -20,11 +20,45 @@
     --font-secundaria: 'Kumbh Sans';
 }
 
+
+
 body, ul{
     margin: 0;
     padding: 0;
   }
 
+  .carrossel{
+    filter: drop-shadow(0px 0px 10px #4e5fa0c4);
+    overflow: hidden;
+    width: 80%;
+    height: 570px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 90px;
+    border-radius: 20px;
+    opacity: 80%;
+
+  }
+
+  .container{
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+    color: #ffffff;
+
+  }
+
+  .container img{
+    width: 1500px;
+    height: 720px;
+    
+  }
+
+  .container h1{
+    font-size: 50px;
+  }
+
+ 
  
   a{
     color: var(--cor-branca2);
@@ -341,4 +375,6 @@ footer {
     vertical-align: top;
     /* Adicione outros estilos conforme necessário */
 }
+
+
 
