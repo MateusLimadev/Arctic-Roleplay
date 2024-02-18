@@ -179,6 +179,10 @@ body, ul{
     
 }
 
+.divlogin:hover{
+  color: var(--cor-azul3);
+}
+
 
 
 

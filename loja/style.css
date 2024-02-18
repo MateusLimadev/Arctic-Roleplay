@@ -393,6 +393,10 @@ footer {
     
 }
 
+.divlogin:hover{
+  color: var(--cor-azul3);
+}
+
 
  #Logotipo {
     max-width: 118px;
