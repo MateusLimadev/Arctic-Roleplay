@@ -82,16 +82,6 @@ body, ul{
   }
 
 
-  a{
-    color: var(--cor-branca2);
-    text-decoration: none;
-    font-family: var(--font-secundaria)
-  }
-  
-  a:hover{
-    color: var(--cor-azul3);
-  }
-  
   
 
   #header {
@@ -122,18 +112,26 @@ body, ul{
     gap: 4.5rem;
     align-items: center;
     
-    
-   
 }
 
  
   
   #menu a{
-    display: block;
+    color: var(--cor-branca2);
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+     display: block;
     padding: .5rem;
     justify-content: center;
    
   }
+  
+  #menu a:hover{
+  background-color: #3498db;
+  border-radius: 50px;
+  padding: 8px;
+  }
+  
 
  
   #btn-mobile{
@@ -176,11 +174,16 @@ body, ul{
     font-weight: 500;
     gap: 4px;
     margin-right: 50px;
+    padding: 8px;
+    border-radius: 40px;
     
 }
 
 .divlogin:hover{
-  color: var(--cor-azul3);
+  background-color: #3498db;
+  border-radius: 50px;
+  padding: 9px;
+  
 }
 
 
