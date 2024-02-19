@@ -116,6 +116,11 @@
         border-bottom: 2px solid rgba(255, 255, 255, 0.137);
     }
 
+    #menu a:hover{
+
+     padding: 0;
+  }
+
     body {
         font-size: 14px; /* Exemplo de ajuste de fonte para telas menores */
     }
