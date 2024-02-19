@@ -123,6 +123,13 @@
         border-bottom: 2px solid rgba(255, 255, 255, 0.137);
     }
 
+     #menu a:hover{
+     color: #3498db;
+     background-color: transparent;
+     border-radius: 0;
+    padding: 2rem 0;
+  }
+
     #Logotipo{
         max-width: 60%;
         

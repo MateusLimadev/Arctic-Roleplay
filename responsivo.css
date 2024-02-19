@@ -117,8 +117,10 @@
     }
 
     #menu a:hover{
-
-     padding: 0;
+     color: #3498db;
+     background-color: transparent;
+     border-radius: 0;
+    padding: 2rem 0;
   }
 
     body {
