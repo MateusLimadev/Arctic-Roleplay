@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+
+
+
+
+
+
+:root {
+    --cor-azul1: #00081E;
+    --cor-azul2: #0c1532;
+    --cor-azul3: #324071c4;
+    --cor-branca1: #ffffff9d;
+    --cor-branca2:#FDFDFD;
+
+    --font-primaria: 'Hind';
+    --font-secundaria: 'Kumbh Sans';
+}
+
+
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1A1A1A;
+}
+
+.container {
+    text-align: center;
+    background-color: #333333;
+    padding: 50px;
+    width: 60%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #ffff;
+    font-family: var(--font-secundaria);
+    
+}
+
+#buttons {
+     display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons button {
+    margin: 0 10px; 
+    background-color: #1A1A1A;
+    color: var(--cor-branca2);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;  
+    cursor: pointer;
+    animation: rotateShadow 2s infinite linear;
+}
+
+#buttons button:hover{
+    transition: 0.5s ease-in-out;  
+    background-color: #1a1919a2;
+
+}
+
+
+
+
+
+#check-group {
+    animation: 0.32s ease-in-out 1.03s check-group;
+    transform-origin: center;
+}
+
+#check-group #check {
+    animation: 0.34s cubic-bezier(0.65, 0, 1, 1) 0.8s forwards check;
+    stroke-dasharray: 0, 75px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#check-group #outline {
+    animation: 0.38s ease-in outline;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+#check-group #white-circle {
+    animation: 0.35s ease-in 0.35s forwards circle;
+    transform: none;
+    transform-origin: center;
+}
+
+@keyframes outline {
+  from {
+    stroke-dasharray: 0, 345.576px;
+  }
+  to {
+    stroke-dasharray: 345.576px, 345.576px;
+  }
+}
+@keyframes circle {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes check {
+  from {
+    stroke-dasharray: 0, 75px;
+  }
+  to {
+    stroke-dasharray: 75px, 75px;
+  }
+}
+@keyframes check-group {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.09);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+
+@keyframes rotateShadow {
+  0% {
+    box-shadow: -2px -2px 8px 1px #07B481, 2px 2px 8px 1px #3700ff;
+  }
+  25% {
+    box-shadow: -2px 2px 8px 1px #07B481, 2px -2px 8px 1px #3700ff;
+  }
+  50% {
+    box-shadow: 2px 2px 8px 1px #07B481, -2px -2px 8px 1px #3700ff;
+  }
+  75% {
+    box-shadow: 2px -2px 8px 1px #07B481, -2px 2px 8px 1px #3700ff;
+  }
+  100% {
+    box-shadow: -2px -2px 8px 1px #07B481, 2px 2px 8px 1px #3700ff;
+  }
+}

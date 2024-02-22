@@ -63,7 +63,7 @@ form {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 50px;
-  width: 70%;
+  max-width: 70%;
   max-width: 70%; 
   margin: 50px auto;
   margin-top: 10%;
@@ -78,14 +78,14 @@ label {
   display: block;
   margin-bottom: 10px;
   margin-top: 30px;
-  max-width: 80%;
+  max-width: 85%;
   text-align: left; 
   
 }
 
 
 input {
-  width: 80%;
+  width: 85%;
   background-color: #1a1a1a;
   border: none;
   padding: 20px;
@@ -94,12 +94,16 @@ input {
   color: white;
   font-family: var(--font-primaria);
   font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   
   
 }
 
+
 textarea{
-  width: 80%;
+  width: 85%;
   background-color: #1a1a1a;
   border: none;
   padding: 20px;
@@ -110,6 +114,7 @@ textarea{
   display: flex;
   font-family: var(--font-primaria);
   font-size: 14px;
+  
   
 }
 
@@ -137,11 +142,12 @@ button {
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
-  width: 85%;
+  width: 90%;
   align-items: center;
   justify-content: center;
   display: flex;
   margin-top: 30px;
+  
 }
 
 button:hover {
@@ -188,5 +194,26 @@ select{
 
 
 
+
+
+@media screen and (max-width: 500px){
+
+  label{
+    font-size: 14px;
+  }
+  
+  input{
+    font-size: 10px;
+  }
+
+  text-area{
+    font-size: 10px;
+  }
+
+  button{
+
+    margin: 30px auto;
+  }
+}
 
 
