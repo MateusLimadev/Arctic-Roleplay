@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de RP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        
+    </div>
+
+  <div class="container">
+    <form>
+        <h1>Lively Roleplay - Allowlist</h1>
+      <div class="column">
+
+         <label for="roleplay">O que é Roleplay? (Responda com suas palavras)</label>
+        <textarea  id="roleplay" name="roleplay" rows="3" required></textarea>
+        
+
+        <label for="experiencia-rp">Possui experiência em RP? Se sim, quanto tempo?</label>
+        <input  type="text" id="experiencia-rp" name="experiencia-rp" required>
+
+        <label for="profissao">Qual profissão você gostaria de assumir com seu personagem?</label>
+        <input  type="text" id="profissao" name="profissao" required>
+
+        <label for="situacao-policial">Você está em alta velocidade, uma viatura com alguns policiais nota em seu radar tal conformidade, sendo assim você escuta a sirene da viatura já induzindo uma "ordem de parada". Nesta situação descreva o que você faria?</label>
+        <textarea  id="situacao-policial" name="situacao-policial" rows="3" required>
+        </textarea>
+      </div>
+
+      <div class="column">
+        <label for="dados-pessoais">Qual o seu nome, sobrenome e data de nascimento na vida real?</label>
+        <input  type="text" id="dados-pessoais" name="dados-pessoais" required>
+
+        <label for="ataque-furia">Em um ataque de fúria você bate o carro e dá perda total nele. Nisso, você sai do veículo e começa a bater em uma pessoa na rua para se acalmar. Isso é correto? Justifique sua resposta.</label>
+        <textarea id="ataque-furia" name="ataque-furia" rows="3" required></textarea>
+
+        <label for="abordagem-armado">Você está sozinho pela rua e é abordado por um grupo num carro, você está armado. Qual seria sua reação? Justifique sua resposta.</label>
+        <textarea id="abordagem-armado" name="abordagem-armado" rows="3" required></textarea>
+
+        <label for="ataque-veiculo">Ao adquirir um veículo, comprado ou roubado, você simplesmente acabou tendo um ataque de fúria e saiu atropelando as pessoas. Isto é certo? Justifique sua resposta.</label>
+        <textarea id="ataque-veiculo" name="ataque-veiculo" rows="3" required></textarea>
+      </div>
+
+      <div class="column">
+        <label for="leitura-regras">Você leu as regras e diretrizes do Lively no Discord?</label>
+        <select id="leitura-regras" name="leitura-regras" required>
+          <option value="selecione">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+
+  
+
+
+        <label for="discord-id">Qual seu ID no Discord?</label>
+        <input type="text" id="discord-id" name="discord-id" required>
+
+        <label for="historia">Qual é a sua Steam HEX? (copie e cole aqui)</label>
+        <input type="text" id="historia" name="historia" required>
+
+        <label for="memoria">Você acabou desmaiando em alguma ação e/ou conformidade, nisto acabou sendo reanimado por um médico, ao acordar, o Dr. lhe faz algumas perguntas e afins. Qual seria o seu comportamento nesta situação?</label>
+        <textarea id="memoria" name="memoria" rows="3" required></textarea>
+
+        <label for="feedback-regras">Nos diga o que você acha das regras, 
+            qual você acha que é boa ou que você não concorda? Por que?</label>
+        <input type="text" id="feedback-regras" name="feedback-regras" required>
+
+        <label for="personagens-anteriores">Quais tipos de personagens você já fez em outras cidades?</label>
+        <input type="text" id="personagens-anteriores" name="personagens-anteriores" required>
+
+        <label for="carac-person">Quais são as características positivas e negativas do seu personagem?</label>
+        <input type="text" id="carac-person" name="carac-person" required>
+
+         <label for="carro-drogas">Você esta andando e vê um carro abandonado cheio de droga. O que você faz e por que?</label>
+        <input type="text" id="carro-drogas" name="carro-drogas" required>
+
+        <label for="bone-amarelo">Você ganhou um boné amarelo de sua madrinha de aniversário, estava andando pela rua e os vagos te pararam falando que essa era a cor deles e que eu era obrigado a tirar o boné. Qual sua reação?</label>
+        <textarea id="bone-amarelo" name="bone-amarelo" rows="3" required></textarea>
+
+        <label for="pessoa-toxica">Você compreende que ser uma pessoa tóxica na comunidade resultará a banimento?</label>
+        <input type="text" id="pessoa-toxica" name="pessoa-toxica" required>
+
+         <label for="porque-lively">Por que você deveria ser aprovado na Lively?</label>
+         <input  type="text" id="porque-lively" name="porque-lively" required>
+
+        
+
+
+        <label for="person-historia">Diga o nome do seu personagem e resuma sua história.</label>
+        <textarea placeholder="História do seu personagem (min 15 linhas)." id="person-historia" name="person-historia" rows="15" minlength="1200" required></textarea>
+      
+
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+<script>
+  document.getElementById('person-historia').addEventListener('input', function() {
+    const minLength = 1000;
+    const currentLength = this.value.length;
+
+    if (currentLength < minLength) {
+      this.setCustomValidity('A história deve ter no mínimo 15 Linhas !');
+    } else {
+      this.setCustomValidity('');
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
