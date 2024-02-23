@@ -74,6 +74,7 @@ body {
     transition: 0.5s ease-in-out;  
     cursor: pointer;
     animation: rotateShadow 2s infinite linear;
+    font-family: var(--font-primaria);
 }
 
 #buttons button:hover{

@@ -217,3 +217,77 @@ select{
 }
 
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+  }
+
+  .modal-content {
+    background-color: #1A1A1A;
+    padding: 20px;
+    border: 1px solid #473DD4;
+    width: 350px;
+    text-align: center;
+    color: var(--cor-branca2);
+    border-radius: 20px;
+    font-size: 14px;
+    
+  }
+
+  .modal-content button{
+    margin: auto;
+    justify-content: center;
+  }
+
+  .modal-content h4{
+    font-size: 15px;
+    font-family: var(--font-secundaria);
+    font-weight: normal;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    
+  }
+
+  .modal-content h3{
+    font-size: 15px;
+    font-family: var(--font-secundaria);
+    font-weight: normal;
+    margin: 30px auto;
+    text-align: center;
+    
+  }
+
+ .modal-content p {
+    font-size: 13px;
+    font-family: var(--font-primaria);
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+}
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #cronometro{
+    display: flex;
+    gap: 40px;
+    color: #e5ff00;
+    font-family: var(--font-secundaria);
+  }
