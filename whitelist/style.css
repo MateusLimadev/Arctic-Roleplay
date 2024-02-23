@@ -458,7 +458,7 @@ select{
   }
 
 
-  textarea{
+textarea{
   animation: rotateShadow 2s infinite linear;
 }
 
