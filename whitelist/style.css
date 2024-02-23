@@ -456,4 +456,20 @@ select{
   margin-left: 0;
   margin-top: 0;
   }
+
+
+  textarea{
+  animation: rotateShadow 2s infinite linear;
+}
+
+
+
+input{
+  animation: rotateShadow 2s infinite linear;
+}
+
+select{
+  animation: rotateShadow 2s infinite linear;
+}
+
 }
