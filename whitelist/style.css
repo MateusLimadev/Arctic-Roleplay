@@ -297,3 +297,37 @@ select{
     color: #e5ff00;
     font-family: var(--font-secundaria);
   }
+
+   #header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    background-color: transparent ;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000; 
+    transition: background-color 0.3s ease; 
+    justify-content: space-between;
+    
+   
+}
+
+#header p {
+    color: var(--cor-branca2);
+    margin-left: 20px;
+    font-family: var(--font-secundaria);
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+#header p:hover{
+  color:#fdfdfd91 ;
+}
+
+#header a{
+  text-decoration: none;
+}
+

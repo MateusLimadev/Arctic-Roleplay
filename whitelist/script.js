@@ -46,16 +46,20 @@ window.recomecarCronometro = function () {
   function exibirModalInicial() {
     const modalInicial = document.getElementById("modalInicial");
      const formAL = document.getElementById("formAL");
+     const header = document.getElementById("header");
     modalInicial.style.display = "block";
     formAL.style.display =  "none";
+    header.style.display =  "block";
   }
 
   
   function fecharModalInicial() {
     const modalInicial = document.getElementById("modalInicial");
     const formAL = document.getElementById("formAL");
+    const header = document.getElementById("header");
     modalInicial.style.display = "none";
     formAL.style.display =  "block";
+    header.style.display =  "none";
     iniciarCronometro();
   }
 
