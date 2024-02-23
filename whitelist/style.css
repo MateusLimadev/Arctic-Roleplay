@@ -214,6 +214,10 @@ select{
 
     margin: 30px auto;
   }
+
+  .modal-content{
+    max-width: 70vw;
+  }
 }
 
 
@@ -251,6 +255,7 @@ select{
     margin: auto;
     margin-top: 10px;
     text-align: center;
+    line-height: 1.7;
     
   }
 
@@ -260,6 +265,7 @@ select{
     font-weight: normal;
     margin: 30px auto;
     text-align: center;
+    line-height: 1.7;
     
   }
 

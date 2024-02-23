@@ -45,13 +45,17 @@ window.recomecarCronometro = function () {
   
   function exibirModalInicial() {
     const modalInicial = document.getElementById("modalInicial");
+     const formAL = document.getElementById("formAL");
     modalInicial.style.display = "block";
+    formAL.style.display =  "none";
   }
 
   
   function fecharModalInicial() {
     const modalInicial = document.getElementById("modalInicial");
+    const formAL = document.getElementById("formAL");
     modalInicial.style.display = "none";
+    formAL.style.display =  "block";
     iniciarCronometro();
   }
 
@@ -62,7 +66,7 @@ window.recomecarCronometro = function () {
 
   
   function iniciarCronometro() {
-    const tempoLimite = 60 * 60; 
+    const tempoLimite = 60 * 60; //o primeiro valor define o tempo com base nos 60 sec
     let tempoRestante = tempoLimite;
 
     temporizador = setInterval(function () {
