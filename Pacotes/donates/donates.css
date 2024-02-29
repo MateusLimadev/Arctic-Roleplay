@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --cor-azul1: #00081E;
+  --cor-azul2: #0c1532;
+  --cor-azul3: #324071c4;
+  --cor-branca1: #ffffff9d;
+  --cor-branca2:#FDFDFD;
+
+  --font-principal: 'Hind';
+  --font-secundaria: 'Kumbh Sans';
+}
+
+
+
+
+.pacotes {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-top: 7%;
+   flex-direction: column;
+}
+
+.pacote {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: #0405158d;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 5%;
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+.pacote:hover {
+    transform: scale(1.1);
+}
+
+/* Adicione mais estilos conforme necessário */
+
+
+
+
+.pacotes img {
+    width: 40%; /* Ajusta a largura máxima da imagem para 100% da largura do contêiner */
+    height: auto; /* Garante que a altura seja ajustada automaticamente para manter a proporção original da imagem */
+    display: block; /* Remove espaçamentos adicionais ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do card */
+    padding: 14px;
+    border-radius: 39px;
+    
+}
+
+.pacotes h1{
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    color: var(--cor-branca2);
+    font-size: 20px;
+}
+
+.pacotes p{
+    color: var(--cor-branca2);
+    font-family: var(--font-principal);
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+.button {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: var(--cor-azul3);
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  margin-left: 55px;
+  margin: auto;
+}
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color:  var(--cor-azul3);
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color:  var(--cor-azul3);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background:  var(--cor-azul3);
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+
+.description p{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  color: var(--cor-branca2);
+  cursor: pointer;
+  transition: all 0.7s;
+  color: #3498db;
+}
+
+.description p:hover{
+   color: #84afcb;
+}
+
+
+
+.description li{
+  color: var(--cor-branca2);
+  list-style: none;
+  text-align: center;
+  font-family: var(--font-principal);
+  text-align: center;
+  
+  
+}
+
+.description ul{
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* MOBILE */
+
+
+ @media  (max-width: 800px){
+    .pacotes {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .pacote {
+        width: 60%;
+        margin: 10px 0;
+    }
+
+    .pacotes h1{
+        padding-bottom: 10px;
+        text-align: center;
+        font-family: var(--font-secundaria);
+        color: var(--cor-branca2);
+        font-size: 20px;
+    }
+    
+    .pacotes p{
+        color: var(--cor-branca2);
+        font-family: var(--font-principal);
+        padding-bottom: 10px;
+    }
+
+    .button {
+        --width: 100px;
+        --height: 35px;
+        --tooltip-height: 35px;
+        --tooltip-width: 90px;
+        --gap-between-tooltip-to-button: 18px;
+        --button-color: var(--cor-azul3);
+        --tooltip-color: #fff;
+        width: var(--width);
+        height: var(--height);
+        background: var(--button-color);
+        position: relative;
+        text-align: center;
+        border-radius: 0.45em;
+        font-family: "Arial";
+        transition: background 0.3s;
+        margin: auto;
+      }
+     }
+
+
