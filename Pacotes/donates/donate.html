@@ -54,11 +54,11 @@
       
           <h1>Donate Bronze</h1>
 
-          <P>Valor R$ 39.90</P>
+          <P>Valor R$ 39,90</P>
 
           <div class="description">
-            <p onclick="showDetails()">Ver detalhes</p>
-            <ul id="details">
+            <h4 onclick="showDetails(event, 'details1')">Ver detalhes</h4>
+            <ul id="details1" class="details">
                 <li>Bônus de Ativação: 5.000$</li>
                 <li>Salário: 800$</li>
                 <li>Mochila permanente</li>
@@ -91,10 +91,10 @@
           <P>Valor R$ 79.90</P>
 
           <div class="description">
-            <p onclick="showDetails()">Ver detalhes</p>
-            <ul id="details">
-                <li>Bônus de Ativação: 5.000$</li>
-                <li>Salário: 800$</li>
+            <h4 onclick="showDetails(event, 'details2')">Ver detalhes</h4>
+            <ul id="details2" class="details">
+                <li>Bônus de Ativação: 10.000$</li>
+                <li>Salário: 1100$</li>
                 <li>Mochila permanente</li>
                 <li>Tag Personalizada</li>
                 <li>Valido por 30 Dias.</li>
@@ -125,10 +125,11 @@
           <P>Valor R$ 169.90</P>
 
           <div class="description">
-            <p onclick="showDetails()">Ver detalhes</p>
-            <ul id="details">
-                <li>Bônus de Ativação: 5.000$</li>
-                <li>Salário: 800$</li>
+            <h4 onclick="showDetails(event, 'details3')">Ver detalhes</h4>
+            <ul id="details3" class="details">
+                <li>Bônus de Ativação: 15.000$</li>
+                <li>Salário: 1500$</li>
+                <li>50 Gemas</li>
                 <li>Mochila permanente</li>
                 <li>Tag Personalizada</li>
                 <li>Valido por 30 Dias.</li>
@@ -161,10 +162,11 @@
           <P>Valor R$ 489.90</P>
 
           <div class="description">
-            <p onclick="showDetails()">Ver detalhes</p>
-            <ul id="details">
-                <li>Bônus de Ativação: 5.000$</li>
-                <li>Salário: 800$</li>
+            <h4 onclick="showDetails(event, 'details4')">Ver detalhes</h4>
+            <ul id="details4" class="details">
+                <li>Bônus de Ativação: 25.000$</li>
+                <li>Salário: 1900$</li>
+                <li>150 Gemas</li>
                 <li>Mochila permanente</li>
                 <li>Tag Personalizada</li>
                 <li>Valido por 30 Dias.</li>
@@ -188,6 +190,9 @@
 
       </div>
 
+       <div id="overlay" class="overlay" onclick="closeOverlay()">
+  <div id="overlayDetails" class="details-box"></div>
+</div>
          <footer>
         <div class="linkarctic">
             <a href="https://discord.gg/2zChNGEkyc" target="_blank">&copy;Arctic Roleplay 2024</a>

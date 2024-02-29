@@ -1,10 +1,15 @@
-var details = document.getElementById('details');
+function showDetails(event, detailsId) {
+    event.preventDefault();
+    var overlayDetails = document.getElementById('overlayDetails');
+    var detailsContent = document.getElementById(detailsId).innerHTML;
+    overlayDetails.innerHTML = detailsContent;
+    document.getElementById('overlay').style.display = 'block';
+  }
 
-function showDetails(){
-    if(details.style.display === 'none'){
-         
-        details.style.display = 'block';
-    }else{
-          details.style.display = 'none';
-    }
-}
+  function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+  }
+
+   document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('overlay').style.display = 'none';
+  });
