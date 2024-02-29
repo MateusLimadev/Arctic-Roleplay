@@ -4,6 +4,22 @@
 
 @media screen and (max-width: 600px) {
 
+    .dropdown{
+       display: none;
+    }
+
+    
+
+    #donates-mobile{
+    display: block;
+    }
+
+    #gemas-mobile{
+    display: block;
+    }
+
+
+    
     .carrossel{
         display: none;
     }

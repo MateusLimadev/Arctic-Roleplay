@@ -371,6 +371,13 @@ footer {
 }
 
 
+#donates-mobile{
+  display: none;
+}
+
+#gemas-mobile{
+  display: none;
+}
 
 /* Estilize o dropdown */
 .dropdown {
